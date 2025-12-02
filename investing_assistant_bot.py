@@ -8,7 +8,6 @@ from aiogram import F
 import asyncio
 import json
 import os
-from dotenv import load_dotenv
 import requests
 import yfinance as yf
 from aiogram import Router
@@ -21,7 +20,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PREMIUM_FILE = os.path.join(BASE_DIR, "premium_users.json")
 DB_FILE = os.path.join(BASE_DIR, "users.json")
 
-load_dotenv()
 BOT_TOKEN = "8565509901:AAGwM7f2zr-7cczbWpni1MxTqCXhZ9SZRpE"
 
 ADMIN_ID = 5586645694  # ваш Telegram ID
