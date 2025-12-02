@@ -22,13 +22,13 @@ PREMIUM_FILE = os.path.join(BASE_DIR, "premium_users.json")
 DB_FILE = os.path.join(BASE_DIR, "users.json")
 
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")  # токен Telegram
+BOT_TOKEN = "8565509901:AAGwM7f2zr-7cczbWpni1MxTqCXhZ9SZRpE"
 
 ADMIN_ID = 5586645694  # ваш Telegram ID
 
 
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=BOT_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(storage=MemoryStorage())
 dp.include_router(router)
